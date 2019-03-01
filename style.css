@@ -39,4 +39,12 @@ html {
       background: black;
       position: absolute;
       top: 50%;
+      /* Moves the origin of the transform
+        default origin is 50%
+        100% moves it to the right side- 100% of the x-axis */
+      transform-origin: 100%;
+      /* start the clock at 12, not 9ish*/
+      transform: rotate(90deg);
+      transition: all 0.05s;
+      transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
     }
